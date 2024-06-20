@@ -1,0 +1,14 @@
+db.sqlite3
+__pycache__
+*__pycache__*
+*__pycache__
+__pycache__/
+*.py[cod]
+*$py.class
+media/
+static/
+static*
+static/*
+
+# migrations
+migrations/
