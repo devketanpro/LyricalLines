@@ -130,4 +130,4 @@ MUSIXMATCH_API_KEY = os.environ.get('MUSIXMATCH_KEY')
 
 #OPENAPI configuration
 OPENAI_URL = "https://api.openai.com/v1/chat/completions"
-OPENAI_API_KEY = os.environ.get('MUSIXMATCH_KEY')
+OPENAI_API_KEY = os.environ.get('OPENAPI_KEY')
