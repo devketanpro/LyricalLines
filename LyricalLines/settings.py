@@ -125,4 +125,4 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 MUSIXMATCH_URL = "https://api.musixmatch.com/ws/1.1/matcher.lyrics.get?"
-MUSIXMATCH_API_KEY = os.getenv("MUSIXMATCH_KEY")
+MUSIXMATCH_API_KEY = os.environ.get('MUSIXMATCH_KEY', "832b4eaaee025e91b12c7ec4894e8eba")

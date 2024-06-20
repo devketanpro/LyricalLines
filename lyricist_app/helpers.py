@@ -30,7 +30,7 @@ def fetch_lyrics_from_musixmatch(artist, title):
         response = requests.get(musicmatch_url, params=params, timeout=10)
         response.raise_for_status()
         data = response.json()
-        return data.get('message', {}).get("body", {}).get("lyrics", {}).get("lyrics_body")
+        return data['message']['body']['lyrics']['lyrics_body'].split("*******")[0]
     except HTTPError as http_err:
         logger.error(f"HTTP error occurred: {http_err}")
     except Timeout as timeout_err:
